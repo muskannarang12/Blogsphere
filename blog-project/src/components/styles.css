@@ -1,0 +1,363 @@
+/* styles.css */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9fafb; /* Light gray background */
+    padding: 20px;
+  }
+  
+  .form-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #3b82f6; /* Blue color */
+    margin-bottom: 10px;
+  }
+  
+  .form-container p {
+    text-align: center;
+    color: #6b7280; /* Gray color */
+    margin-bottom: 20px;
+  }
+  
+  .form-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #374151; /* Dark gray color */
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .form-container input:focus {
+    outline: none;
+    border-color: #3b82f6; /* Blue border on focus */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* Blue shadow */
+  }
+  
+  .form-container .input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form-container .input-group input {
+    flex: 1;
+    margin-bottom: 0;
+  }
+  
+  .form-container .input-group button {
+    padding: 10px 15px;
+    background-color: #3b82f6; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .form-container .input-group button:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .form-container .input-group button:disabled {
+    background-color: #9ca3af; /* Gray color when disabled */
+    cursor: not-allowed;
+  }
+  
+  .form-container .password-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6b7280; /* Gray color */
+  }
+  
+  .form-container .password-toggle:hover {
+    color: #3b82f6; /* Blue color on hover */
+  }
+  
+  .form-container .terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-container .terms input {
+    margin-right: 10px;
+  }
+  
+  .form-container .terms label {
+    margin: 0;
+    color: #6b7280; /* Gray color */
+  }
+  
+  .form-container .terms a {
+    color: #3b82f6; /* Blue color */
+    text-decoration: none;
+  }
+  
+  .form-container .terms a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-container button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #3b82f6; /* Blue color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .form-container button[type="submit"]:hover {
+    background-color: #2563eb; /* Darker blue on hover */
+  }
+  
+  .form-container button[type="submit"]:disabled {
+    background-color: #9ca3af; /* Gray color when disabled */
+    cursor: not-allowed;
+  }
+  
+  .form-container .links {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .form-container .links a {
+    color: #3b82f6; /* Blue color */
+    text-decoration: none;
+  }
+  
+  .form-container .links a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-container .links span {
+    color: #6b7280; /* Gray color */
+    margin: 0 8px;
+  }
+
+  /* styles.css */
+/* styles.css */
+.navbar {
+  padding: 10px 0;
+}
+
+.navbar .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #6C63FF;
+}
+
+.navbar .form-control {
+  border-radius: 20px;
+  padding-left: 40px;
+}
+
+.navbar .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.navbar .dropdown-menu {
+  right: 0;
+  left: auto;
+}
+
+/* Mobile Search Bar */
+.navbar .d-lg-none .form-control {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Notification Overlay */
+.notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 1000; /* Ensure it's on top of everything */
+}
+
+/* Notification Box */
+.notification-box {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  border: 2px solid #6C63FF; /* Add a border */
+  animation: slideIn 0.5s ease-out; /* Add a slide-in animation */
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Hover Effect (Optional) */
+.notification-box:hover {
+  transform: scale(1.02); /* Slightly scale up on hover */
+  transition: transform 0.2s ease;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.dark-mode .form-input {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.dark-mode .submit-button {
+  background-color: #6C63FF;
+  color: #fff;
+}
+
+.dark-mode .links a {
+  color: #6C63FF;
+}
+
+
+/* Favorites Container */
+.favorites-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Favorites Header */
+.favorites-header {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #6C63FF; /* Purple color */
+}
+
+/* Favorites Grid */
+.favorites-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Favorite Blog Card */
+.favorite-blog-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.favorite-blog-card:hover {
+  transform: scale(1.02);
+}
+
+/* Blog Cover Image */
+.blog-cover-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Blog Title */
+.blog-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Blog Meta (Author and Date) */
+.blog-meta {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Blog Description */
+.blog-description {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Blog Content */
+.blog-content {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Heart Icon */
+.heart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.heart-icon:hover {
+  transform: scale(1.1);
+}
+
+/* No Favorites Message */
+.no-favorites-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}

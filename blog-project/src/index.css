@@ -1,0 +1,33 @@
+/* Light Theme */
+body.light {
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+/* Dark Theme */
+body.dark {
+  background-color: #1a1a1a;
+  color: #f8f9fa;
+}
+
+/* Navbar Dark Theme */
+body.dark .navbar {
+  background-color: #343a40 !important;
+}
+
+body.dark .navbar .navbar-brand,
+body.dark .navbar .nav-link,
+body.dark .navbar .form-control,
+body.dark .navbar .btn {
+  color: #f8f9fa !important;
+}
+
+body.dark .navbar .form-control {
+  background-color: #495057;
+  border-color: #6c757d;
+}
+
+body.dark .navbar .btn-outline-primary {
+  border-color: #f8f9fa;
+  color: #f8f9fa;
+}
